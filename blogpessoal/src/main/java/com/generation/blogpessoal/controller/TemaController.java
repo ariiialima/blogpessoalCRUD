@@ -1,4 +1,5 @@
 package com.generation.blogpessoal.controller;
+
 import java.util.List;
 
 import javax.validation.Valid;
@@ -22,8 +23,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/temas")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
-
 public class TemaController {
+
 	@Autowired
 	private TemaRepository temaRepository;
 
@@ -73,4 +74,3 @@ public class TemaController {
 	}
 
 }
-

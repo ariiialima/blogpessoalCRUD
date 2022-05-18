@@ -18,7 +18,6 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 @Entity
 @Table(name = "tb_postagens") 
-
 public class Postagem {
 
 	@Id
@@ -44,7 +43,6 @@ public class Postagem {
 	@JsonIgnoreProperties("postagem")
 	private Usuario usuario;
 
-	
 	public Long getId() {
 		return id;
 	}
@@ -85,7 +83,6 @@ public class Postagem {
 		this.tema = tema;
 	}
 
-
 	public Usuario getUsuario() {
 		return this.usuario;
 	}
@@ -93,7 +90,5 @@ public class Postagem {
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
 	}
-
- 
 
 }
